@@ -1,56 +1,77 @@
 <!DOCTYPE html>
 <html lang="tr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Basit Form</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="form-container">
-        <form action="#" method="post">
-            <label for="name">Ad Soyad:</label>
-            <input type="text" id="name" name="name" placeholder="Adınız ve Soyadınız" required>
+      <form action="#" method="post">
+        <label for="name"> Ad Soyad: </label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Adınız ve Soyadınız"
+          required
+        />
+        <label for="email"> E-posta: </label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="E-posta adresiniz."
+          required
+        />
 
-            <label for="email">E-posta:</label>
-            <input type="email" id="email" name="email" placeholder="E-posta adresiniz." required>
+        <label for="phone">Telefon:</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="555-555-5555"
+          required
+        />
 
-            <label for="phone">Telefon:</label>
-            <input type="tel" id="phone" name="phone" placeholder="555-555-5555" required>
+        <label for="birthdate">Doğum Tarihi:</label>
+        <input type="date" id="birthdate" name="birthdate" required />
 
-            <label for="birthdate">Doğum Tarihi:</label>
-            <input type="date" id="birthdate" name="birthdate" required>
+        <label>Cinsiyet:</label>
+        <div class="gender-options">
+          <label>
+            <input type="radio" name="gender" value="male" required /> Erkek
+          </label>
+          <label>
+            <input type="radio" name="gender" value="female" /> Kadın
+          </label>
+          <label>
+            <input type="radio" name="gender" value="other" /> Diğer
+          </label>
+        </div>
+        <label for="country">Ülke:</label>
+        <select id="country" name="country" required>
+          <option value="" disabled selected>Ülke Seçin</option>
+          <option value="tr">Türkiye</option>
+          <option value="us">ABD</option>
+          <option value="de">Almanya</option>
+          <option value="fr">Fransa</option>
+          <option value="it">İtalya</option>
+          <option value="es">İspanya</option>
+        </select>
 
-            <label>Cinsiyet:</label>
-<div class="gender-options">
-    <label>
-        <input type="radio" name="gender" value="male" required> Erkek
-    </label>
-    <label>
-        <input type="radio" name="gender" value="female"> Kadın
-    </label>
-    <label>
-        <input type="radio" name="gender" value="other"> Diğer
-    </label>
-</div>
+        <label for="message">Mesaj:</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          placeholder="Mesajınızı buraya yazın..."
+          required
+        ></textarea>
 
-
-            <label for="country">Ülke:</label>
-            <select id="country" name="country" required>
-                <option value="" disabled selected>Ülke Seçin</option>
-                <option value="tr">Türkiye</option>
-                <option value="us">ABD</option>
-                <option value="de">Almanya</option>
-                <option value="fr">Fransa</option>
-                <option value="it">İtalya</option>
-                <option value="es">İspanya</option>
-            </select>
-
-            <label for="message">Mesaj:</label>
-            <textarea id="message" name="message" rows="5" placeholder="Mesajınızı buraya yazın..." required></textarea>
-
-            <button type="submit">Gönder</button>
-        </form>
+        <button type="submit">Gönder</button>
+      </form>
     </div>
-</body>
+  </body>
 </html>
