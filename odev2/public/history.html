@@ -1,41 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>History</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-  <div class="history">
-    <h1>Calculation History</h1>
-    <table id="historyTable">
-      <thead>
-        <tr>
-          <th>Expression</th>
-          <th>Result</th>
-        </tr>
-      </thead>
-      <tbody id="historyBody"></tbody>
-    </table>
-    <div class="row">
-      <button 
-      class="w-button" 
-      onclick="location.href='index.html'"
-      >
-        Back
-      </button>
-      <button 
-      class="w-button" 
-      id="clearHistoryButton"
-      >
-      Clear
-    </button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>History</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="history">
+      <h1>Calculation History</h1>
+      <table id="historyTable">
+        <thead>
+          <tr>
+            <th>Expression</th>
+            <th>Result</th>
+          </tr>
+        </thead>
+        <tbody id="historyBody"></tbody>
+      </table>
+      <div class="row">
+        <button class="w-button" onclick="location.href='index.html'">
+          Back
+        </button>
+        <button class="w-button" id="clearHistoryButton">Clear</button>
+      </div>
     </div>
-  </div>
-  <script src="history.js"></script>
-</body>
-
+    <script src="history.js"></script>
+  </body>
 </html>

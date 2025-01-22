@@ -29,7 +29,7 @@ const calculateResult = () => {
     let display = document.getElementById('input-display');
     try {
         if (!calculated) {
-            let result = eval(display.value);
+            let result = new Function('return ' + display.value)();
             if (isNaN(result) || result === Infinity) {
                 display.value = "Error";
             } else {
